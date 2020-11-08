@@ -14,3 +14,54 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coderhood react</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script type="module">
+       const rootElement = document.getElementById('root');
+       const element = document.createElement('div');
+
+       element.textContent = 'Hello World';
+       element.className = 'container';
+
+       rootElement.append(element);
+
+    </script>
+</body>
+</html>
+
+-->
+
+<!--
+    
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script type="module">
+      const rootElement = document.getElementById('root')
+      const element = React.createElement('div', {
+        className: 'container',
+        children: [
+          React.createElement('span', null, 'Hello'),
+          ' ',
+          React.createElement('span', null, 'World'),
+        ],
+      })
+      ReactDOM.render(element, rootElement);
+    </script>
+</body>
+
+-->
+  
